@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		934C2540226F145600121F38 /* ARCAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8DD532110B492009CABE6 /* ARCAppTests.swift */; };
+		93D865AA211846300018B9CA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D865A9211846300018B9CA /* Log.swift */; };
+		93F8DD412110B490009CABE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8DD402110B490009CABE6 /* AppDelegate.swift */; };
+		93F8DD432110B490009CABE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8DD422110B490009CABE6 /* ViewController.swift */; };
+		93F8DD452110B492009CABE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F8DD442110B492009CABE6 /* Assets.xcassets */; };
+		93F8DD482110B492009CABE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F8DD462110B492009CABE6 /* Main.storyboard */; };
+		93F8DD5F2110B492009CABE6 /* ARCAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F8DD5E2110B492009CABE6 /* ARCAppUITests.swift */; };
+		952AC16BB4103FCF217CFF6D /* Pods_ARCApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC2A19EF319B98AC48FA571 /* Pods_ARCApp.framework */; };
+		E41C2217B9028B776E19139F /* Pods_ARCApp_ARCAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E1888A2617349AE967E118 /* Pods_ARCApp_ARCAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93F8DD502110B492009CABE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F8DD352110B490009CABE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93F8DD3C2110B490009CABE6;
+			remoteInfo = ARCApp;
+		};
+		93F8DD5B2110B492009CABE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93F8DD352110B490009CABE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93F8DD3C2110B490009CABE6;
+			remoteInfo = ARCApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BC792B2561023A8264D973C /* Pods-ARCApp-ARCAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCApp-ARCAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ARCApp-ARCAppTests/Pods-ARCApp-ARCAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1346B9DB3049444CCBE239F8 /* Pods-ARCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCApp.debug.xcconfig"; path = "Target Support Files/Pods-ARCApp/Pods-ARCApp.debug.xcconfig"; sourceTree = "<group>"; };
+		489124A19CE1AA092CED76B1 /* Pods-ARCApp-ARCAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCApp-ARCAppTests.release.xcconfig"; path = "Target Support Files/Pods-ARCApp-ARCAppTests/Pods-ARCApp-ARCAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AC2A19EF319B98AC48FA571 /* Pods_ARCApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C5151F2110C60F00B4DD41 /* AppleRawConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppleRawConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D865A9211846300018B9CA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		93E2428B2111B4D8004DDEC2 /* AppleRawConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppleRawConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F8DD3D2110B490009CABE6 /* ARCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F8DD402110B490009CABE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93F8DD422110B490009CABE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93F8DD442110B492009CABE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93F8DD472110B492009CABE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93F8DD492110B492009CABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F8DD4A2110B492009CABE6 /* ARCApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ARCApp.entitlements; sourceTree = "<group>"; };
+		93F8DD4F2110B492009CABE6 /* ARCAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F8DD532110B492009CABE6 /* ARCAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCAppTests.swift; sourceTree = "<group>"; };
+		93F8DD552110B492009CABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F8DD5A2110B492009CABE6 /* ARCAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F8DD5E2110B492009CABE6 /* ARCAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCAppUITests.swift; sourceTree = "<group>"; };
+		93F8DD602110B492009CABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6E1888A2617349AE967E118 /* Pods_ARCApp_ARCAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARCApp_ARCAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32B40487DC98A31BC27B858 /* Pods-ARCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCApp.release.xcconfig"; path = "Target Support Files/Pods-ARCApp/Pods-ARCApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93F8DD3A2110B490009CABE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952AC16BB4103FCF217CFF6D /* Pods_ARCApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F8DD4C2110B492009CABE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41C2217B9028B776E19139F /* Pods_ARCApp_ARCAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F8DD572110B492009CABE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11B967CECD378A0F0AF15FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E2428B2111B4D8004DDEC2 /* AppleRawConverter.framework */,
+				93C5151F2110C60F00B4DD41 /* AppleRawConverter.framework */,
+				5AC2A19EF319B98AC48FA571 /* Pods_ARCApp.framework */,
+				D6E1888A2617349AE967E118 /* Pods_ARCApp_ARCAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C65053B524186828356896F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1346B9DB3049444CCBE239F8 /* Pods-ARCApp.debug.xcconfig */,
+				E32B40487DC98A31BC27B858 /* Pods-ARCApp.release.xcconfig */,
+				0BC792B2561023A8264D973C /* Pods-ARCApp-ARCAppTests.debug.xcconfig */,
+				489124A19CE1AA092CED76B1 /* Pods-ARCApp-ARCAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93F8DD342110B490009CABE6 = {
+			isa = PBXGroup;
+			children = (
+				93F8DD3F2110B490009CABE6 /* ARCApp */,
+				93F8DD522110B492009CABE6 /* ARCAppTests */,
+				93F8DD5D2110B492009CABE6 /* ARCAppUITests */,
+				93F8DD3E2110B490009CABE6 /* Products */,
+				11B967CECD378A0F0AF15FF8 /* Frameworks */,
+				4C65053B524186828356896F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		93F8DD3E2110B490009CABE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93F8DD3D2110B490009CABE6 /* ARCApp.app */,
+				93F8DD4F2110B492009CABE6 /* ARCAppTests.xctest */,
+				93F8DD5A2110B492009CABE6 /* ARCAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93F8DD3F2110B490009CABE6 /* ARCApp */ = {
+			isa = PBXGroup;
+			children = (
+				93F8DD402110B490009CABE6 /* AppDelegate.swift */,
+				93F8DD422110B490009CABE6 /* ViewController.swift */,
+				93F8DD442110B492009CABE6 /* Assets.xcassets */,
+				93F8DD462110B492009CABE6 /* Main.storyboard */,
+				93F8DD492110B492009CABE6 /* Info.plist */,
+				93F8DD4A2110B492009CABE6 /* ARCApp.entitlements */,
+				93D865A9211846300018B9CA /* Log.swift */,
+			);
+			path = ARCApp;
+			sourceTree = "<group>";
+		};
+		93F8DD522110B492009CABE6 /* ARCAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				93F8DD532110B492009CABE6 /* ARCAppTests.swift */,
+				93F8DD552110B492009CABE6 /* Info.plist */,
+			);
+			path = ARCAppTests;
+			sourceTree = "<group>";
+		};
+		93F8DD5D2110B492009CABE6 /* ARCAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93F8DD5E2110B492009CABE6 /* ARCAppUITests.swift */,
+				93F8DD602110B492009CABE6 /* Info.plist */,
+			);
+			path = ARCAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93F8DD3C2110B490009CABE6 /* ARCApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F8DD632110B492009CABE6 /* Build configuration list for PBXNativeTarget "ARCApp" */;
+			buildPhases = (
+				9BBD2AE4DBFD697B2CCAA329 /* [CP] Check Pods Manifest.lock */,
+				93F8DD392110B490009CABE6 /* Sources */,
+				93F8DD3A2110B490009CABE6 /* Frameworks */,
+				93F8DD3B2110B490009CABE6 /* Resources */,
+				9317B3D9221568AE00013FA9 /* ShellScript */,
+				86120A65428504B12238B94F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARCApp;
+			productName = ARCApp;
+			productReference = 93F8DD3D2110B490009CABE6 /* ARCApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93F8DD4E2110B492009CABE6 /* ARCAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F8DD662110B492009CABE6 /* Build configuration list for PBXNativeTarget "ARCAppTests" */;
+			buildPhases = (
+				6FE3ACAFF6F75D12E7F58797 /* [CP] Check Pods Manifest.lock */,
+				93F8DD4B2110B492009CABE6 /* Sources */,
+				93F8DD4C2110B492009CABE6 /* Frameworks */,
+				93F8DD4D2110B492009CABE6 /* Resources */,
+				F757D87A4D76174738939C42 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93F8DD512110B492009CABE6 /* PBXTargetDependency */,
+			);
+			name = ARCAppTests;
+			productName = ARCAppTests;
+			productReference = 93F8DD4F2110B492009CABE6 /* ARCAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93F8DD592110B492009CABE6 /* ARCAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F8DD692110B492009CABE6 /* Build configuration list for PBXNativeTarget "ARCAppUITests" */;
+			buildPhases = (
+				93F8DD562110B492009CABE6 /* Sources */,
+				93F8DD572110B492009CABE6 /* Frameworks */,
+				93F8DD582110B492009CABE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93F8DD5C2110B492009CABE6 /* PBXTargetDependency */,
+			);
+			name = ARCAppUITests;
+			productName = ARCAppUITests;
+			productReference = 93F8DD5A2110B492009CABE6 /* ARCAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93F8DD352110B490009CABE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "StyleShoots Technologies B.V.";
+				TargetAttributes = {
+					93F8DD3C2110B490009CABE6 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					93F8DD4E2110B492009CABE6 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 93F8DD3C2110B490009CABE6;
+					};
+					93F8DD592110B492009CABE6 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 93F8DD3C2110B490009CABE6;
+					};
+				};
+			};
+			buildConfigurationList = 93F8DD382110B490009CABE6 /* Build configuration list for PBXProject "ARCApp" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93F8DD342110B490009CABE6;
+			productRefGroup = 93F8DD3E2110B490009CABE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93F8DD3C2110B490009CABE6 /* ARCApp */,
+				93F8DD4E2110B492009CABE6 /* ARCAppTests */,
+				93F8DD592110B492009CABE6 /* ARCAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93F8DD3B2110B490009CABE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F8DD452110B492009CABE6 /* Assets.xcassets in Resources */,
+				93F8DD482110B492009CABE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F8DD4D2110B492009CABE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F8DD582110B492009CABE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FE3ACAFF6F75D12E7F58797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCApp-ARCAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86120A65428504B12238B94F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCApp/Pods-ARCApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppleRawConverter/AppleRawConverter.framework",
+				"${BUILT_PRODUCTS_DIR}/StyleShootsCommons/StyleShootsCommons.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppleRawConverter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StyleShootsCommons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARCApp/Pods-ARCApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9317B3D9221568AE00013FA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3a10ecaf7e4293ce62fd97e93bef216c03036491 32cc439281b1c73c45f42b68898e0b1921d3abd374f532013b9f3fd12aa98963";
+		};
+		9BBD2AE4DBFD697B2CCAA329 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F757D87A4D76174738939C42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCApp-ARCAppTests/Pods-ARCApp-ARCAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppleRawConverter/AppleRawConverter.framework",
+				"${BUILT_PRODUCTS_DIR}/StyleShootsCommons/StyleShootsCommons.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppleRawConverter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StyleShootsCommons.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARCApp-ARCAppTests/Pods-ARCApp-ARCAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93F8DD392110B490009CABE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F8DD432110B490009CABE6 /* ViewController.swift in Sources */,
+				93F8DD412110B490009CABE6 /* AppDelegate.swift in Sources */,
+				93D865AA211846300018B9CA /* Log.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F8DD4B2110B492009CABE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934C2540226F145600121F38 /* ARCAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93F8DD562110B492009CABE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F8DD5F2110B492009CABE6 /* ARCAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93F8DD512110B492009CABE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93F8DD3C2110B490009CABE6 /* ARCApp */;
+			targetProxy = 93F8DD502110B492009CABE6 /* PBXContainerItemProxy */;
+		};
+		93F8DD5C2110B492009CABE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93F8DD3C2110B490009CABE6 /* ARCApp */;
+			targetProxy = 93F8DD5B2110B492009CABE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93F8DD462110B492009CABE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93F8DD472110B492009CABE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93F8DD612110B492009CABE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		93F8DD622110B492009CABE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		93F8DD642110B492009CABE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1346B9DB3049444CCBE239F8 /* Pods-ARCApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D3AHGRR8UL;
+				INFOPLIST_FILE = ARCApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = StyleShoots.ARCApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		93F8DD652110B492009CABE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32B40487DC98A31BC27B858 /* Pods-ARCApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D3AHGRR8UL;
+				INFOPLIST_FILE = ARCApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = StyleShoots.ARCApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		93F8DD672110B492009CABE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC792B2561023A8264D973C /* Pods-ARCApp-ARCAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ARCAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = StyleShoots.ARCAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCApp.app/Contents/MacOS/ARCApp";
+			};
+			name = Debug;
+		};
+		93F8DD682110B492009CABE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489124A19CE1AA092CED76B1 /* Pods-ARCApp-ARCAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ARCAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = StyleShoots.ARCAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCApp.app/Contents/MacOS/ARCApp";
+			};
+			name = Release;
+		};
+		93F8DD6A2110B492009CABE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ARCAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = StyleShoots.ARCAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = ARCApp;
+			};
+			name = Debug;
+		};
+		93F8DD6B2110B492009CABE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ARCAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = StyleShoots.ARCAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = ARCApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93F8DD382110B490009CABE6 /* Build configuration list for PBXProject "ARCApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F8DD612110B492009CABE6 /* Debug */,
+				93F8DD622110B492009CABE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93F8DD632110B492009CABE6 /* Build configuration list for PBXNativeTarget "ARCApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F8DD642110B492009CABE6 /* Debug */,
+				93F8DD652110B492009CABE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93F8DD662110B492009CABE6 /* Build configuration list for PBXNativeTarget "ARCAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F8DD672110B492009CABE6 /* Debug */,
+				93F8DD682110B492009CABE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		93F8DD692110B492009CABE6 /* Build configuration list for PBXNativeTarget "ARCAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93F8DD6A2110B492009CABE6 /* Debug */,
+				93F8DD6B2110B492009CABE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93F8DD352110B490009CABE6 /* Project object */;
+}
