@@ -81,6 +81,24 @@
             ReferencedContainer = "container:ARCApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-src &quot;/Users/sm/Dropbox\ \(VR\ Holding\ BV\)/Apple\ RAW\ converter/ARC_test_pack/Src/SV-096_OSX10.10.5_MKIII/shot_off_20.cr2&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-dst &quot;/Users/sm/Dropbox\ \(VR\ Holding\ BV\)/Apple\ RAW\ converter/ARC_test_pack/Dst/shot_off_20.tif&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-param &quot;/Users/sm/Dropbox\ \(VR\ Holding\ BV\)/Apple\ RAW\ converter/ARC_test_pack/params/&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-doCAcorr &quot;true&quot; -focalLength &quot;98&quot; -lensModel &quot;EF24&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
