@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  ARCApp
 //
-//
 
 import Cocoa
 import AppleRawConverter
@@ -108,6 +107,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         if (applyCAcorr){
                             let focalLength = UserDefaults.standard.integer(forKey: "focalLength")
                             let LensModel = UserDefaults.standard.string(forKey: "lensModel")
+                            Log.verbose("CA is going to be corrected using these params: focalLength:\(focalLength), lensModel:\(LensModel!)")
                             try rawImage?.removeCA(from: dst, takenAtFocal: UInt(focalLength), usingLensModel: LensModel!, usingParameters: appleRawParameters)
                             Log.verbose("CA was corrected and written to \(dst.deletingPathExtension().appendingPathExtension("_CA.tif"))")
                         }
