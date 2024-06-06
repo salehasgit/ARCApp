@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  ARCApp
-//
+
 
 import Cocoa
 import AppleRawConverter
@@ -23,12 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func getLaunchArguments() -> [URL] {
-        
-        //experimenting with CommandLine.argc
-//        let dd = CommandLine.argc //two extras! "-NSDocumentRevisionsDebugMode" and "YES"
-//        let arguments = CommandLine.arguments
-//        for argument in arguments{print(argument)}
-        
+               
         var inputArgsURLs: [URL] = []
         var file = UserDefaults.standard.url(forKey: "param")
         if(file == nil){
@@ -104,6 +99,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         Log.verbose("TIFF was written to \(dst)")
                         
                         let applyCAcorr = UserDefaults.standard.bool(forKey: "doCAcorr") // False by default.
+                        let start = DispatchTime.now() // <<<<<<<<<< Start time
                         if (applyCAcorr){
                             let focalLength = UserDefaults.standard.integer(forKey: "focalLength")
                             let LensModel = UserDefaults.standard.string(forKey: "lensModel")
@@ -111,6 +107,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             try rawImage?.removeCA(from: dst, takenAtFocal: UInt(focalLength), usingLensModel: LensModel!, usingParameters: appleRawParameters)
                             Log.verbose("CA was corrected and written to \(dst.deletingPathExtension().appendingPathExtension("_CA.tif"))")
                         }
+                        let end = DispatchTime.now()   // <<<<<<<<<<   end time
+                        let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
+                        let timeInterval = Double(nanoTime) / 1_000_000_000 // Technically could overflow for long running tests
+                        LogEvent(name: "CA removal", attributes: ["duration": timeInterval], "Removing CA took \(timeInterval) seconds")
+
                         
                     } catch let error {
                         Log.error("Unable to write TIFF: \(error)")
