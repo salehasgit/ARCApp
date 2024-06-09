@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
 //  ARCApp
-
+//
 
 import Cocoa
 import AppleRawConverter
@@ -23,7 +23,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func getLaunchArguments() -> [URL] {
-               
+        
+        //experimenting with CommandLine.argc
+//        let dd = CommandLine.argc //two extras! "-NSDocumentRevisionsDebugMode" and "YES"
+//        let arguments = CommandLine.arguments
+//        for argument in arguments{print(argument)}
+        
         var inputArgsURLs: [URL] = []
         var file = UserDefaults.standard.url(forKey: "param")
         if(file == nil){
@@ -105,7 +110,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                             let LensModel = UserDefaults.standard.string(forKey: "lensModel")
                             Log.verbose("CA is going to be corrected using these params: focalLength:\(focalLength), lensModel:\(LensModel!)")
                             try rawImage?.removeCA(from: dst, takenAtFocal: UInt(focalLength), usingLensModel: LensModel!, usingParameters: appleRawParameters)
-                            Log.verbose("CA was corrected and written to \(dst.deletingPathExtension().appendingPathExtension("_CA.tif"))")
+                            Log.verbose("CA was corrected and written to \(dst.deletingPathExtension().appendingPathExtension("_CAcorrected.tif"))")
                         }
                         let end = DispatchTime.now()   // <<<<<<<<<<   end time
                         let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
