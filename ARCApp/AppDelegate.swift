@@ -1,13 +1,10 @@
 //
 //  AppDelegate.swift
 //  ARCApp
-//
+
 
 import Cocoa
 import AppleRawConverter
-
-import Fabric
-import Crashlytics
 
 var serial = ""
 
@@ -137,19 +134,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // https://docs.fabric.io/apple/crashlytics/os-x.html
         UserDefaults.standard.register(defaults: ["NSApplicationCrashOnExceptions" : true])
         
-        // Register Fabric
-        Crashlytics.sharedInstance().delegate = self
-        Fabric.with([Crashlytics.self, Answers.self])
-        
-        // Retrieve the localhost name
-//        let serial = 1.0
-        let (uuid, _serial) = getSystemUUID()
-        serial = _serial
-        Crashlytics.sharedInstance().setUserIdentifier(serial) //AppInfo.shared.host.runSystemSerial
-        Crashlytics.sharedInstance().setUserEmail("\(uuid)")
-        Crashlytics.sharedInstance().setUserName(Host.current().localizedName ?? "")
-        Crashlytics.sharedInstance().setObjectValue("1.0", forKey: "core_version")
-        
+                
         // custom event
         LogEvent(name: "Application started", "Let's do some conversions!")
         
@@ -220,31 +205,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
-extension AppDelegate: CrashlyticsDelegate {
-    func crashlyticsDidDetectReport(forLastExecution report: CLSReport, completionHandler: @escaping (Bool) -> Void) {
-        // You should take some set of actions here based on knowing that a crash happened, but then make sure to call the completion handler
-        // If you don't call the completion handler, the SDK will not submit the crash report.
-        completionHandler(true)
-    }
-}
 
-func getSystemUUID() -> (uuid: String, serial: String) {
-    let dev = IOServiceMatching("IOPlatformExpertDevice")
-    let platformExpert: io_service_t = IOServiceGetMatchingService(kIOMasterPortDefault, dev)
-    let UUIDAsCFString = IORegistryEntryCreateCFProperty(platformExpert, kIOPlatformUUIDKey as? CFString, kCFAllocatorDefault, 0)
-    let serialNumberAsCFString = IORegistryEntryCreateCFProperty(platformExpert, kIOPlatformSerialNumberKey as? CFString, kCFAllocatorDefault, 0)
-    IOObjectRelease(platformExpert)
-    let uuid = UUIDAsCFString?.takeUnretainedValue() as? String ?? ""
-    let ser = serialNumberAsCFString?.takeUnretainedValue() as? String ?? ""
-    return (uuid, ser)
-}
 
 func LogEvent(name: String, attributes: [String: Any] = [:], _ line: String = "") {
-    var augmentedAttributes: [String: Any]? = attributes
-    augmentedAttributes?["Machine ID"] = serial
-    
-    Answers.logCustomEvent(withName: name,
-                           customAttributes: augmentedAttributes)
-    
     Log.info("Event: \(name): \(line)")
 }
